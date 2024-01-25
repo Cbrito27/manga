@@ -1,0 +1,15 @@
+version: '1'
+
+services:
+  frontend:
+    # web
+    container_name: MangaASD_front
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      #args:
+      #- NODE_ENV=integration
+    ports:
+      - 3000:3000
+    
